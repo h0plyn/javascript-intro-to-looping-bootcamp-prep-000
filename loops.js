@@ -14,7 +14,14 @@ function whileLoop(num) {
 };
 
 function doWhileLoop(int) {
+  let i = 0;
+  
+  function incrementVariable() {
+    i += 1;
+    return i;
+  }
+  
   do {
-    
-  } while ();
+    console.log("I run once regardless.")
+  } while (incrementVariable < int);
 };
